@@ -9,13 +9,11 @@
 list = [1, 43, 13, 24, 35, 16, 17, 28, 39]
 print(list)
 sum = 0
-
+i = 1
 for i in range(len(list)):
-        if i == 0:
-            print(0)
-        if i % 2 != 0:
-            sum += list[i]
-print(sum)
+    if i % 2 != 0:
+        sum += list[i]
+print(f'Сумма элементов на нечетных позициях: ', sum)
     
 
 

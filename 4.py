@@ -5,11 +5,13 @@
 # 3 -> 11
 # 2 -> 10
 
+def decimal_to_binary(n):
+    
+    base = int(2)
+    result = ''
+    while n > 0:
+        result = str(n % 2) + result
+        n //= base
+    print(result)
 
-n = int(input('Введите число в десятичной системе: '))
-base = int(2)
-result = ''
-while n > 0:
-    result = str(n % 2) + result
-    n //= base
-print(result)
+decimal_to_binary(45)
