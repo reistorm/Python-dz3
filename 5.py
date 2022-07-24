@@ -5,7 +5,7 @@
 # [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21]
 
 def fib(n):
-    
+   
     if n in [1,2]:
         return 1
     else:
@@ -14,5 +14,13 @@ n = int(input("Введите число: "))
 numbers = []
 for e in range(1, n+1):
     numbers.append(fib(e))
+numbers.insert(0, 0)
 print(numbers)
+for i in range(n+1):
+    if i % 2 == 0:
+        numbers[i] *= -1
+    print(numbers[i] + numbers) 
 
+# думала добавлять в начало списка элементы, если индекс кратен 2,
+# то умножать на (-1), если нечетный индекс, то простое копирование
+# не дорешала 
